@@ -1,5 +1,5 @@
 ﻿using ExercicioLogica;
 
-IExercicio exercicio = new Ex09();
+IExercicio exercicio = new Ex25();
 exercicio.Exercicio();
 
