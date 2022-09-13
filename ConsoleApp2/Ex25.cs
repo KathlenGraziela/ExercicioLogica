@@ -12,17 +12,12 @@ namespace ExercicioLogica
     {
         public void Exercicio()
         {
-            int[] numeros = new int[10];
             int soma = 0;
 
             for (int i = 0; i < 10; i++)
             {
                 Console.Write("Informe um número: ");
-                numeros[i] = Convert.ToInt32(Console.ReadLine());
-            }
-            for (int i = 0; i < 10; i++)
-            {
-                soma = soma + numeros[i];
+                soma += Convert.ToInt32(Console.ReadLine());
             }
             Console.WriteLine($"Soma Total: {soma}");
         }

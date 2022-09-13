@@ -18,11 +18,7 @@ namespace ExercicioLogica
             for (int i = 0; i < 10; i++)
             {
                 Console.Write("Informe um número: ");
-                numeros[i] = Convert.ToDouble(Console.ReadLine());
-            }
-            for (int i = 0; i < 10; i++)
-            {
-                soma = soma + numeros[i];
+                soma += Convert.ToDouble(Console.ReadLine());
             }
             Console.WriteLine($"Soma Total: {soma/10}");
         }

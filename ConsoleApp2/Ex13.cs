@@ -27,14 +27,14 @@ namespace ExercicioLogica
             double valorTotal = qtdAdquirida * valorUnitario;
             Console.WriteLine($"Valor Total: R$ {valorTotal.ToString("0.00")}");
 
-            double valorPagar = 0, valorDesc = 0;
+            double valorPagar, valorDesc;
 
             if(qtdAdquirida <= 5)
             {
                 valorDesc = valorTotal * 0.02;
                 valorPagar = valorTotal - valorDesc;
             }
-            else if(qtdAdquirida >5 && qtdAdquirida <=10)
+            else if(qtdAdquirida <=10)
             {
                 valorDesc = valorTotal * 0.03;
                 valorPagar = valorTotal - valorDesc;

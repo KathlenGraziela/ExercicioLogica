@@ -13,8 +13,7 @@ namespace ExercicioLogica
     {
         public void Exercicio()
         {
-            Console.Write("Informe um numero: ");
-            int numero = Convert.ToInt32(Console.ReadLine());
+            int numero = 0;
 
             while (numero <= 0)
             {

@@ -14,18 +14,12 @@ namespace ExercicioLogica
     {
         public void Exercicio()
         {
-            
-            int[] numeros = new int[10];
             int n=0;
 
             for(int i = 0; i < 10; i++)
             {
                 Console.Write("Informe um número: ");
-                numeros[i] = Convert.ToInt32(Console.ReadLine());
-            }
-            for(int i = 0; i <10; i++)
-            {
-                if (numeros[i] < 0)
+                if (Convert.ToInt32(Console.ReadLine()) < 0)
                     n++;
             }
             Console.WriteLine($"São {n} Números Negativos");

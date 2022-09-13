@@ -28,14 +28,12 @@ namespace ExercicioLogica
             Console.Write("Informe o Ano de Ingresso: ");
             int anoIngresso = Convert.ToInt32(Console.ReadLine());
 
-            int idade = 2022 - anoNascimento;
-            int qtdTrabalhado = 2022 - anoIngresso;
+            int idade = DateTime.Now.Year - anoNascimento;
+            int qtdTrabalhado = DateTime.Now.Year - anoIngresso;
 
-            if(idade >= 65)
-                Console.WriteLine("Requerer aposentadoria");
-            else if(idade >= 60 && qtdTrabalhado >= 25)
-                Console.WriteLine("Requerer aposentadoria");
-            else if (qtdTrabalhado >= 30)
+            if (idade >= 65 ||
+                (idade >= 60 && qtdTrabalhado >= 25) ||
+                qtdTrabalhado >= 30)
                 Console.WriteLine("Requerer aposentadoria");
             else
                 Console.WriteLine("Não requerer aposentadoria");
